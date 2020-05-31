@@ -1,12 +1,12 @@
 body{
     font-family: 'Montserrat', sans-serif; 
     
+
 }
 
 .App{
-    width: 90%;
+    width: 99%;
     margin: 0 auto;
     border: 1px solid black;
-    border-radius: 2px 2px;
-
+    border-radius: 3px 3px;
 }
