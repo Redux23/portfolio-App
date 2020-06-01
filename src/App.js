@@ -7,6 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 
 import './App.css';
 import Footer from './component/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
 
 
@@ -19,7 +21,7 @@ class App extends React.Component {
       headerLink: [
         { title: 'Home', path: "/" },
         { title: 'About Me', path: "/about" },
-        { title: 'Contact Me', path: "/contact" },
+        { title: 'Contact', path: "/footer" },
       ],
       home: {
         title: "welcome to my website",
@@ -53,15 +55,30 @@ class App extends React.Component {
                 <Nav className="ml-auto">
                   <Link className="nav-link" to="/">Home</Link>
                   <Link className="nav-link" to="/about">About Me</Link>
-                  <Link className="nav-link" to="/contact">Contact</Link>
+                  <Link className="nav-link" to="./component/Footer">Contact</Link>
+
+
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
-              
-            <Footer/>
+
+            <Route path="/" exact render={() => <HomePage
+              title={this.state.home.title}
+              subtitle={this.state.home.subtitle}
+              text={this.state.home.text}
+            />} />
+
+            <Route path="/" exact render={() => <AboutPage
+              title={this.state.about.title} />
+            } />
+
+           
+
+
+            <Footer />
           </Container>
         </Router>
-        
+
       </div>
     );
 
