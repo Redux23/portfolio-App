@@ -11,7 +11,7 @@ function Footer() {
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-0 columns" md={3} sm={12}>
-                     This is the Footer
+                     <h2>This is where the social media links will be put.</h2>
                     </Col>
 
                     <Col className="p-0 columns" md={3}>
