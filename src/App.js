@@ -36,7 +36,8 @@ class App extends React.Component {
       },
       contact: {
         title: "welcome to my website",
-      }
+      },
+      phone: "+2347030247846"
 
 
     }
