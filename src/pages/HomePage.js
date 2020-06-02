@@ -1,9 +1,22 @@
 import React from 'react';
+import Hero from '../component/Hero';
+import Carousel from '../component/carousel';
 
-function HomePage(props){
-return(
-    <h1>This is the homepage</h1>
-)
+function HomePage(props) {
+
+    return (
+        <div>
+            <Hero
+
+                title={props.title}
+                subtitle={props.subtitle}
+                text={props.text} />
+
+            <Carousel />
+
+        </div>
+
+    )
 }
 
 export default HomePage;

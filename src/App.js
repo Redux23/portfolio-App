@@ -24,20 +24,18 @@ class App extends React.Component {
         { title: 'Contact', path: "/footer" },
       ],
       home: {
-        title: "welcome to my website",
-        subtitle: `const myName = "Bright Osuagwu"; I am  a Frontend
-         Developer Web Developer with skills that connect
-        like a hook`,
-        text: "click below to see some of my works."
-
+        title: "welcome to my website.",
+        subtitle: `const myName = "Bright";`,
+        text: "Check below to see some of my works."
       },
       about: {
-        title: "welcome to my website",
+        title: "welcome to my website"
       },
       contact: {
         title: "welcome to my website",
+        phone: "+2347030247846"
       },
-      phone: "+2347030247846"
+      
 
 
     }
@@ -56,7 +54,7 @@ class App extends React.Component {
                 <Nav className="ml-auto">
                   <Link className="nav-link" to="/">Home</Link>
                   <Link className="nav-link" to="/about">About Me</Link>
-                  <Link className="nav-link" to="./component/Footer">Contact</Link>
+                  <Link className="nav-link" to="./Footer">Contact</Link>
 
 
                 </Nav>
@@ -69,9 +67,9 @@ class App extends React.Component {
               text={this.state.home.text}
             />} />
 
-            <Route path="/" exact render={() => <AboutPage
+            {/* <Route path="/" exact render={() => <AboutPage
               title={this.state.about.title} />
-            } />
+            } /> */}
 
            
 
