@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card'
 
 
 
@@ -39,7 +40,9 @@ class Carousel extends React.Component {
     render() {
         return (
             
-           <div>Carousel Works!</div>    
+           <div>
+               <Card/>
+           </div>    
         )
     }
 }
