@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../component/Hero';
-import Carousel from '../component/carousel';
+import Carousel from '../component/Carousel';
 
 function HomePage(props) {
 
@@ -10,7 +10,8 @@ function HomePage(props) {
 
                 title={props.title}
                 subtitle={props.subtitle}
-                text={props.text} />
+                text={props.text}
+            />
 
             <Carousel />
 

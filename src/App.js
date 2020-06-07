@@ -8,7 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import './App.css';
 import Footer from './component/Footer';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+// import AboutPage from './pages/AboutPage';
 
 
 
@@ -32,8 +32,8 @@ class App extends React.Component {
         title: "welcome to my website"
       },
       contact: {
-        title: "welcome to my website",
-        phone: "+2347030247846"
+        title: "",
+        phone: ""
       },
       
 
@@ -71,13 +71,11 @@ class App extends React.Component {
               title={this.state.about.title} />
             } /> */}
 
-           
-
-
             <Footer />
+            
           </Container>
         </Router>
-
+ 
       </div>
     );
 
