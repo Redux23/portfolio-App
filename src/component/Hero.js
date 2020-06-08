@@ -5,15 +5,25 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
+
+
 function Hero(props) {
+const styles = [
+    {color: "midnightblue"},
+    {color: "grey"}, 
+    {color: "navy"} 
+
+]
+
+
 
     return (
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
             <Container fluid={true} >
                 <Row className="justify-content-center p-5">
                     <Col md={8} sm={12} className="text-center">
-                        {props.title && <h1 className="display-1 font-weight-bolder">{props.title}</h1>}
-                        {props.subtitle && <h3 className="display-4">{props.subtitle}</h3>}
+                        {props.title && <h1 style={styles[0]} className="display-1 font-weight-bolder big-text">{props.title}</h1>}
+                        {props.subtitle && <h3 style={styles[1]} className="display-4">{props.subtitle}</h3>}
                         {props.text && <h4 className="font-weight-light">{props.text}</h4>}
                     </Col>
                 </Row>
