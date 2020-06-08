@@ -11,6 +11,7 @@ function HomePage(props) {
                 subtitle={props.subtitle}
                 text={props.text}
             />
+            
             <Carousel />
 
         </div>
