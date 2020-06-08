@@ -1,14 +1,16 @@
 import React from 'react';
+import '../component/Card-style.css';
 
 
 
 function Card(props) {
+ 
   
     return (
 
-        <div className="card text-center">
-            <div className="overflow">
-                <img src={props.item.imgSrc} alt="react-logo" /*className="card-img-top"*/ />
+        <div  className="card text-center">
+            <div >
+                <img src={props.item.imgSrc} alt="react-logo" />
             </div>
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.item.title}</h4>

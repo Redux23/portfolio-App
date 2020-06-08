@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../component/Card';
+import '../component/Card-style.css';
 
 import html5 from '../assets/images/html5.png';
 import javascript from '../assets/images/javascript.png';
@@ -86,20 +87,22 @@ class Carousel extends React.Component {
 
     createItems = (items) => {
         return items.map(item => {
-            return <Card item={item} onClick={(e => { this.handleCardClick(item.id, e) })} key={item.id} />
+            return <Card 
+            item={item} 
+            onClick={(e => { this.handleCardClick(item.id, e) })} 
+            key={item.id}
+            className="col-md-8 box"
+             />
         })
     }
 
     render() {
-       
+        
         return (
 
             <div  className="container-fluid">
-                <div className="row justify-content-around">
-                    <div className="col-md-4">
+                <div  className="row grid">
                         {this.createItems(this.state.items)}
-                    </div>
-
                 </div>
             </div>
         )
