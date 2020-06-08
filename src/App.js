@@ -6,9 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 
 
 import './App.css';
+
+
 import Footer from './component/Footer';
 import HomePage from './pages/HomePage';
-// import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/AboutPage';
 
 
 
@@ -21,7 +23,7 @@ class App extends React.Component {
       headerLink: [
         { title: 'Home', path: "/" },
         { title: 'About Me', path: "/about" },
-        { title: 'Contact', path: "/footer" },
+        { title: 'Contact', path: "./component/Footer" },
       ],
       home: {
         title: "welcome to my website.",
@@ -29,13 +31,14 @@ class App extends React.Component {
         text: "Check below to see some of my works."
       },
       about: {
-        title: "welcome to my website"
+        title: `About Me`,
+       
       },
       contact: {
         title: "",
         phone: ""
       },
-      
+
 
 
     }
@@ -48,13 +51,13 @@ class App extends React.Component {
         <Router>
           <Container className="p-0" fluid={true}>
             <Navbar className="border-bottom" bg="transparent" expand="lg">
-              <a href="#" className="navbar-brand h1">My Portfolio</a>
+              <a href="/" className="navbar-brand h1">My Portfolio</a>
               <Navbar.Toggle arial-controls="navbar-toggle" />
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto">
                   <Link className="nav-link" to="/">Home</Link>
                   <Link className="nav-link" to="/about">About Me</Link>
-                  <Link className="nav-link" to="./Footer">Contact</Link>
+                  <Link className="nav-link" to="./component/Footer">Contact</Link>
 
 
                 </Nav>
@@ -67,15 +70,19 @@ class App extends React.Component {
               text={this.state.home.text}
             />} />
 
-            {/* <Route path="/" exact render={() => <AboutPage
+            <Route path="/about" render={() => <AboutPage
               title={this.state.about.title} />
-            } /> */}
+            } />
+
+            <Route path="./Footer" render={() => <Footer
+              title={this.state.about.title} />
+            } />
 
             <Footer />
-            
+
           </Container>
         </Router>
- 
+
       </div>
     );
 
