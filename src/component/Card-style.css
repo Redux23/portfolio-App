@@ -1,0 +1,42 @@
+.card{
+    width: 100px;
+}
+
+.card > div{
+   
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+}
+
+.container-fluid .row {
+    padding: 6rem;
+
+}
+
+/* .box{
+    margin: 20px;
+} */
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.grid > div{
+    padding: 40px;
+    margin: 20px;
+    flex-basis: calc(33.333% - 40px);
+    
+}
+
