@@ -51,7 +51,7 @@ class Carousel extends React.Component {
                     title: "Elegant Blur-UI",
                     subTitle: "Responsive Html and CSS landing page with a blur banner background on hover.",
                     imgSrc: css_img,
-                    link: "https://github.com/Redux23/Elegant-Blur-UI",
+                    link: "https://redux23.github.io/Elegant-Blur-UI/",
                     isSelected: false
                 },
                 {
@@ -67,7 +67,7 @@ class Carousel extends React.Component {
 
 
         }
-        this.handleCardClick = this.handleCardClick.bind(this)
+        
     }
 
     handleCardClick(id) {
@@ -92,6 +92,7 @@ class Carousel extends React.Component {
             onClick={(e => { this.handleCardClick(item.id, e) })} 
             key={item.id}
             className="col-md-8 box"
+            
              />
         })
     }

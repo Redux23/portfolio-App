@@ -3,7 +3,8 @@ import Hero from '../component/Hero';
 import Carousel from '../component/Carousel';
 
 function HomePage(props) {
-
+   
+    
     return (
         <div>
             <Hero

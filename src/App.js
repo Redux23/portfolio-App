@@ -9,8 +9,10 @@ import './App.css';
 
 
 import Footer from './component/Footer';
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 
 
@@ -26,17 +28,17 @@ class App extends React.Component {
         { title: 'Contact', path: "./component/Footer" },
       ],
       home: {
-        title: "welcome to my website.",
+        title: "Welcome to my website.",
         subtitle: `const myName = "Bright";`,
         text: "Check below to see some of my works."
       },
       about: {
         title: `About Me`,
-       
+
       },
       contact: {
-        title: "",
-        phone: ""
+        title: "Contact Me",
+      
       },
 
 
@@ -57,7 +59,7 @@ class App extends React.Component {
                 <Nav className="ml-auto">
                   <Link className="nav-link" to="/">Home</Link>
                   <Link className="nav-link" to="/about">About Me</Link>
-                  <Link className="nav-link" to="./component/Footer">Contact</Link>
+                  <Link className="nav-link" to="/contact">Contact</Link>
 
 
                 </Nav>
@@ -74,9 +76,11 @@ class App extends React.Component {
               title={this.state.about.title} />
             } />
 
-            <Route path="./Footer" render={() => <Footer
-              title={this.state.about.title} />
+            <Route path="/contact" render={() => <ContactPage
+              title={this.state.contact.title} />
             } />
+
+
 
             <Footer />
 

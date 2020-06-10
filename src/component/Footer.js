@@ -20,10 +20,10 @@ function Footer(props) {
                     <IconContext.Provider value={{ size: '2rem' }}>
                         <Col className="p-0 columns" md={3} sm={12}>
                             <div>
-                                <a href="#"
+                                <a href="tel:+2347030247846"
                                     style={styles}
                                     className=" p-1 mr-2">
-                                    <FaPhone />Phone No: +2347030247846</a>
+                                    <FaPhone />Call Now</a>
                                 <br />
                                 <a href="#"
                                     style={styles}
@@ -32,27 +32,18 @@ function Footer(props) {
                             </div>
 
                             <hr />
-                            <div className="icons-link p-2">
+                         
+
+                        </Col>
+                    </IconContext.Provider>
+                    <Col className="p-0 columns" md={3}>
+                       <div className="icons-link p-2">
                                 <a style={styles} href="#" className=" p-1" ><FaFacebookF /></a>
                                 <a style={styles} href="#" className=" p-1" ><FaInstagram /></a>
                                 <a style={styles} href="#" className=" p-1" ><FaLinkedinIn /></a>
                                 <a style={styles} href="#" className=" p-1" ><FaFigma /></a>
                                 <a style={styles} href="#" className=" p-1" ><FaGithub /></a>
                             </div>
-
-                        </Col>
-                    </IconContext.Provider>
-                    <Col className="p-0 columns" md={3}>
-                        <p>Contact me:</p>
-                        <input
-                            type="email"
-                            placeholder="example@email.com"
-                        />
-                        <br />
-                        <textarea
-                            type="text"
-                            placeholder="Write message here..."
-                        />
                     </Col>
                 </Row>
             </Container>
