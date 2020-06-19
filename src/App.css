@@ -61,3 +61,21 @@
     color: #EE6353;
     padding: 10px 15px;
 }
+
+.form-container{
+    width: 400px;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 5px 5px;
+    margin: 0 auto;
+
+}
+
+
+.form-input{
+    width: 400px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
