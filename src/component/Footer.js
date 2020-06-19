@@ -38,11 +38,11 @@ function Footer(props) {
                     </IconContext.Provider>
                     <Col className="p-0 columns" md={3}>
                        <div className="icons-link p-2">
-                                <a style={styles} href="https://www.facebook.com/korrage" className=" p-1" target="_blank"><FaFacebookF /></a>
-                                <a style={styles} href="https://www.instagram.com/reduxtalk23/" className=" p-1"target="_blank" ><FaInstagram /></a>
-                                <a style={styles} href="https://www.linkedin.com/in/bright-osuagwu-7b9bb2129/" className=" p-1" target="_blank"><FaLinkedinIn /></a>
+                                <a style={styles} href="https://www.facebook.com/korrage" className=" p-1"><FaFacebookF /></a>
+                                <a style={styles} href="https://www.instagram.com/reduxtalk23/" className=" p-1"><FaInstagram /></a>
+                                <a style={styles} href="https://www.linkedin.com/in/bright-osuagwu-7b9bb2129/" className=" p-1"><FaLinkedinIn /></a>
                                 <a style={styles} href="https://www.figma.com/file/jl7BBE93GbujgQMNaqt6Os/My-portfolio?node-id=0%3A1" className=" p-1" target="_blank"><FaFigma /></a>
-                                <a style={styles} href="https://github.com/Redux23" className=" p-1" target="_blank"><FaGithub /></a>
+                                <a style={styles} href="https://github.com/Redux23" className=" p-1"><FaGithub /></a>
                             </div>
                     </Col>
                 </Row>
