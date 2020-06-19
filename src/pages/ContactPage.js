@@ -4,7 +4,12 @@ import Hero from '../component/Hero';
 import Content from '../component/Content';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
-import axios from 'axios';
+import Axios from 'axios';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import NewsFeed from '../component/newsfeed';
+
+
 
 
 
@@ -35,7 +40,7 @@ class ContactPage extends React.Component {
            disabled: true
         });
 
-        axios.post('http://localhost:8100/api/form', this.state)
+        Axios.post('http://localhost:8100/api/email', this.state)
         .then(res=>{
             if(res.data.success){
                 this.setState({
@@ -51,7 +56,6 @@ class ContactPage extends React.Component {
             }
         })
         .catch(err=>{
-
             this.setState({
                 disabled: false,
                 emailSent: false
@@ -63,10 +67,16 @@ class ContactPage extends React.Component {
     render () {
         return (
             <div >
+                <div>
                 <Hero title={this.props.title} />
+                </div>
+
                 <Content>
-                    <Form onSubmit={this.handleSubmit}>
-                        <Form.Group >
+                    <Row>
+                        <Col>
+
+                    <Form className="form-container" onSubmit={this.handleSubmit}>
+                        <Form.Group className="form-input">
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control
                                 id="full-name"
@@ -77,7 +87,7 @@ class ContactPage extends React.Component {
                                 onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Form.Group>
+                        <Form.Group className="form-input">
                             <Form.Label htmlFor="email">Email</Form.Label>
                             <Form.Control
                                 id="email"
@@ -88,7 +98,7 @@ class ContactPage extends React.Component {
                                 onChange={this.handleChange} />
                         </Form.Group>
 
-                        <Form.Group>
+                        <Form.Group className="form-input">
                             <Form.Label htmlFor="message">Message</Form.Label>
                             <Form.Control
                                 id="message"
@@ -107,6 +117,14 @@ class ContactPage extends React.Component {
                         {this.state.emailSent === false && <p className="d-inline err-msg">Error! Message did not send.</p>}
 
                     </Form>
+                        </Col>
+
+                        <Col>
+
+                        <NewsFeed/>
+
+                        </Col>
+                    </Row>
                 </Content>
 
 
