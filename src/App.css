@@ -68,14 +68,16 @@
     border: 1px solid grey;
     border-radius: 5px 5px;
     margin: 0 auto;
+ 
+
 
 }
 
 
-.form-input{
+/* .form-input{
     width: 400px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     display: block;
-}
+} */
