@@ -89,10 +89,8 @@ class Carousel extends React.Component {
         return items.map(item => {
             return <Card 
             item={item} 
-            onClick={(e => { this.handleCardClick(item.id, e) })} 
+            onClick={(e => {this.handleCardClick(item.id, e)})} 
             key={item.id}
-            className="col-md-8 box"
-            
              />
         })
     }
@@ -102,7 +100,7 @@ class Carousel extends React.Component {
         return (
 
             <div  className="container-fluid">
-                <div  className="row grid">
+                <div  className="grid">
                         {this.createItems(this.state.items)}
                 </div>
             </div>

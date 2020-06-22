@@ -28,104 +28,107 @@ class ContactPage extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange =(e)=> {
+    handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value })
 
     }
 
-    handleSubmit=(e)=> {
+    handleSubmit = (e) => {
         e.preventDefault();
         this.setState({
-           disabled: true
+            disabled: true
         });
 
         Axios.post('http://localhost:8100/api/email', this.state)
-        .then(res=>{
-            if(res.data.success){
-                this.setState({
-                    disabled: false,
-                    emailSent: true
-                });
+            .then(res => {
+                if (res.data.success) {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
 
-            }else{
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
                 this.setState({
                     disabled: false,
                     emailSent: false
-                });
-            }
-        })
-        .catch(err=>{
-            this.setState({
-                disabled: false,
-                emailSent: false
+                })
             })
-        })
 
     }
 
-    render () {
+    render() {
         return (
             <div >
                 <div>
-                <Hero title={this.props.title} />
+                    <Hero title={this.props.title} />
                 </div>
 
-                <Content>
-                    <Row>
-                        <Col>
+                <div>
 
-                    <Form className="form-container" onSubmit={this.handleSubmit}>
-                        <Form.Group className="form-input">
-                            <Form.Label htmlFor="full-name">Full Name</Form.Label>
-                            <Form.Control
-                                id="full-name"
-                                name="name"
-                                type="text"
-                                value={this.state.name}
-                                placeholder="First and Last name"
-                                onChange={this.handleChange} />
-                        </Form.Group>
+                    <Content>
+                        <Row>
+                            <Col>
 
-                        <Form.Group className="form-input">
-                            <Form.Label htmlFor="email">Email</Form.Label>
-                            <Form.Control
-                                id="email"
-                                name="email"
-                                type="email"
-                                value={this.state.email}
-                                placeholder="example@email.com"
-                                onChange={this.handleChange} />
-                        </Form.Group>
+                                <Form onSubmit={this.handleSubmit}>
+                                    <Form.Group className="form-input">
+                                        <Form.Label htmlFor="full-name">Full Name</Form.Label>
+                                        <Form.Control
+                                            id="full-name"
+                                            name="name"
+                                            type="text"
+                                            value={this.state.name}
+                                            placeholder="First and Last name"
+                                            onChange={this.handleChange} />
+                                    </Form.Group>
 
-                        <Form.Group className="form-input">
-                            <Form.Label htmlFor="message">Message</Form.Label>
-                            <Form.Control
-                                id="message"
-                                name="message"
-                                as="textarea"
-                                value={this.state.message}
-                                rows="3"
-                                placeholder="Write a message..."
-                                onChange={this.handleChange} />
-                        </Form.Group>
+                                    <Form.Group className="form-input">
+                                        <Form.Label htmlFor="email">Email</Form.Label>
+                                        <Form.Control
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            value={this.state.email}
+                                            placeholder="example@email.com"
+                                            onChange={this.handleChange} />
+                                    </Form.Group>
 
-                        <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled} >
-                            Send
+                                    <Form.Group className="form-input">
+                                        <Form.Label htmlFor="message">Message</Form.Label>
+                                        <Form.Control
+                                            id="message"
+                                            name="message"
+                                            as="textarea"
+                                            value={this.state.message}
+                                            rows="3"
+                                            placeholder="Write a message..."
+                                            onChange={this.handleChange} />
+                                    </Form.Group>
+
+                                    <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled} >
+                                        Send
                             </Button>
-                        {this.state.emailSent === true && <p className="d-inline success-msg">Your Message has ben sent!</p>}
-                        {this.state.emailSent === false && <p className="d-inline err-msg">Error! Message did not send.</p>}
+                                    {this.state.emailSent === true && <p className="d-inline success-msg">Your Message has ben sent!</p>}
+                                    {this.state.emailSent === false && <p className="d-inline err-msg">Error! Message did not send.</p>}
 
-                    </Form>
-                        </Col>
+                                </Form>
+                            </Col>
 
-                        <Col>
+                            <Col>
 
-                        <NewsFeed/>
+                                <NewsFeed />
 
-                        </Col>
-                    </Row>
-                </Content>
+                            </Col>
+                        </Row>
+                    </Content>
+                </div>
 
 
             </div>

@@ -82,11 +82,11 @@ class App extends React.Component {
 
 
 
-            <Footer />
 
           </Container>
         </Router>
 
+            <Footer />
       </div>
     );
 
