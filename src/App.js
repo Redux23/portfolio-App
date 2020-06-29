@@ -50,6 +50,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <header>
+
         <Router>
           <Container className="p-0" fluid={true}>
             <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -85,6 +87,7 @@ class App extends React.Component {
 
           </Container>
         </Router>
+        </header>
 
             <Footer />
       </div>
