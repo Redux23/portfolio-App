@@ -100,8 +100,10 @@ class Carousel extends React.Component {
         return (
 
             <div  className="container-fluid">
-                <div  className="grid">
+                <div  className="justify-content-center row">
+                        <div className="grid col">
                         {this.createItems(this.state.items)}
+                    </div>
                 </div>
             </div>
         )

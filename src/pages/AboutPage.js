@@ -9,14 +9,20 @@ import '../App.css';
 
 function AboutPage(props) {
 
+  const styles = [
+    {color: 'midnightblue'},
+    {fontSize: '10px'},
+    {margin: '20px'}
+  ]
+
   return (
 
     <div >
-      <div>
+      <div >
         <img className="img" src={bright} alt="my picture" />
       </div>
 
-      <Hero title={props.title} />
+      <Hero title={props.title} style={{color: 'midnightblue', fontSize: '40px', margin: '-40px'}}/>
       <Content>
         <p>
           Graduate of the All Nations University College, Ghana.Studied Business Administration with

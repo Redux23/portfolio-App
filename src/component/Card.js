@@ -6,7 +6,7 @@ import '../component/Card-style.css';
 function Card(props) {
      return (
 
-        <div  className="card text-center">
+        <div  className="card text-center col-md-8 col-sm-12">
             <div className="overflow">
                 <img src={props.item.imgSrc} alt="logos" className="card-img-top" />
             </div>
