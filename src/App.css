@@ -12,33 +12,23 @@
     
 }
 
-/* Content class component  */
-.content{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 40px;
-}
-
 
 
 /* About-page class component for profile image */
 .img{
-    width: 350px;
-    height: 350px;
-    margin: auto;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
     display: block;
-    background-size: 80%;
+    background-size: 50%;
     background-position: center;
     border-radius: 10px 10px;
-    transition: 1s;
-    
-
 }
 
-.img:hover{
+/* .img:hover{
     background-size: 100% !important;
     background-position: center;
-}
+} */
 
 .button{
     color: white;
@@ -46,9 +36,9 @@
 
 /* About-Page about-me content */
 .about-content{
-    margin-bottom: 300px;
-    margin-top: 100px;
-    background-position-y: 100px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    /* background-position-y: 100px; */
 }
 /* Contact-Page message response handler */
 

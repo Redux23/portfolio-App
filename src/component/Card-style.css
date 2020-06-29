@@ -1,4 +1,19 @@
 
+/* Content class component  */
+.content{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+.hero{
+    font-size: medium;
+}
+
+
 .card{
     width: 100px;
 }
@@ -42,18 +57,27 @@ overflow: hidden;
     margin: 20px;
 } */
 
+
+
 .grid{
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    display: flex;
 } 
+
 
 .grid > div{
     padding: 40px;
     margin: 20px;
+    min-width: 200px;
     flex-basis: calc(33.333% - 40px);
-    border-radius: 10px 10px;
+    border-radius: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    
+    
     
 } 
+
 
 
