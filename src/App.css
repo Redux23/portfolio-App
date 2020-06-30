@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/* Portfolio header in App.js */
+.h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Footer class */
+.columns{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* About-page class component for profile image */
+.img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .img:hover{
+    background-size: 100% !important;
+    background-position: center;
+} */
+
+.button{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* About-Page about-me content */
+.about-content{
+    margin-bottom: 150px;
+    margin-top: 50px;
+    /* background-position-y: 100px; */
+}
+/* Contact-Page message response handler */
+
+.success-msg{
+    color:#57A773;
+    padding: 10px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.err-msg{
+    color: #EE6353;
+    padding: 10px 15px;
 }
+
+.form-container{
+    width: 400px;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 5px 5px;
+    margin: 0 auto;
+ 
+
+
+}
+
+
+/* .form-input{
+    width: 400px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+} */
