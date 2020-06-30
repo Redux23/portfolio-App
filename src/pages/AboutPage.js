@@ -9,17 +9,12 @@ import '../App.css';
 
 function AboutPage(props) {
 
-  const styles = [
-    {color: 'midnightblue'},
-    {fontSize: '10px'},
-    {margin: '20px'}
-  ]
 
   return (
 
     <div >
       <div >
-        <img className="img" src={bright} alt="my picture" />
+        <img className="img" src={bright} alt="my logo" />
       </div>
 
       <Hero title={props.title} style={{color: 'midnightblue', fontSize: '40px', margin: '-40px'}}/>
@@ -36,7 +31,7 @@ function AboutPage(props) {
 
       <div className="button  text-center">
         <a href={BO_CV} className="btn btn-dark btn-lg mr-3 text-light" download>Download CV</a>
-        <a href={BO_CV} className="btn btn-success btn-lg text-light" target="_blank">View CV</a>
+        <a href={BO_CV} className="btn btn-success btn-lg text-light" target="_blank" rel="noopener noreferrer">View CV</a>
       </div>
     </div>
   )

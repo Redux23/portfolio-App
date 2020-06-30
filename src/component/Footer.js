@@ -25,7 +25,7 @@ function Footer(props) {
                                     className=" p-1 mr-2">
                                     <FaPhone />Call Now</a>
                                 <br />
-                                <a href="#"
+                                <a href="mailto:bo.osuagwu@gmail.com"
                                     style={styles}
                                     className=" p-1" value={{ size: '4rem' }} >
                                     <FaMailBulk />:bo.osuagwu@gmail.com</a>
@@ -41,7 +41,7 @@ function Footer(props) {
                                 <a style={styles} href="https://www.facebook.com/korrage" className=" p-1"><FaFacebookF size={50} /></a>
                                 <a style={styles} href="https://www.instagram.com/reduxtalk23/" className=" p-1"><FaInstagram  size={50}/></a>
                                 <a style={styles} href="https://www.linkedin.com/in/bright-osuagwu-7b9bb2129/" className=" p-1"><FaLinkedinIn size={50} /></a>
-                                <a style={styles} href="https://www.figma.com/file/jl7BBE93GbujgQMNaqt6Os/My-portfolio?node-id=0%3A1" className=" p-1" target="_blank"><FaFigma  size={50}/></a>
+                                <a style={styles} href="https://www.figma.com/file/jl7BBE93GbujgQMNaqt6Os/My-portfolio?node-id=0%3A1" className=" p-1" target="_blank" rel="noopener noreferrer"><FaFigma  size={50}/></a>
                                 <a style={styles} href="https://github.com/Redux23" className=" p-1"><FaGithub  size={50}/></a>
                             </div>
                     </Col>
