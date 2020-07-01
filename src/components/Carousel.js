@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import '../components/Card-style.css';
+import './Card-style.css';
 
 import html5 from '../assets/images/html5.png';
 import javascript from '../assets/images/javascript.png';
