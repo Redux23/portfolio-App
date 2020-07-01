@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../component/Hero';
-import Carousel from '../../src/component/Carousel';
+import Carousel from '../component/Carousel';
 
 function HomePage(props) {
    
