@@ -7,13 +7,20 @@ function HomePage(props) {
     
     return (
         <div>
+            <div>
             <Hero
                 title={props.title}
                 subtitle={props.subtitle}
                 text={props.text}
             />
+
+            </div>
+
+            <div>
+             <Carousel />
+
+            </div>
             
-            <Carousel />
 
         </div>
 
