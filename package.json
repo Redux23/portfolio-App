@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "npm build --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
