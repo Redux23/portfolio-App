@@ -1,13 +1,13 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
-import Hero from '../component/Hero';
-import Content from '../component/Content';
+import Hero from '../components/Hero';
+import Content from '../components/Content';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 import Axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import NewsFeed from '../component/newsfeed';
+import NewsFeed from '../components/newsfeed';
 
 
 

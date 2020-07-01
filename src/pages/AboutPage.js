@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from '../component/Hero';
-import Content from '../component/Content';
+import Hero from '../components/Hero';
+import Content from '../components/Content';
 import bright from '../assets/images/bright.jpg';
 import BO_CV from '../assets/images/BO_CV.pdf';
 import '../App.css';
